@@ -54,6 +54,7 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+    margin-right: 0px;
 }
 
 .bg-center,
@@ -78,21 +79,6 @@ a:hover {
 
 .bg-t-edge {
     background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -155,6 +141,7 @@ a:hover {
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
+    display: none;
 }
 
 .d-bloc .btn-wire,
@@ -196,6 +183,7 @@ a:hover {
 .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
+    width: 90%;
 }
 
 .d-bloc .panel button:hover,
@@ -254,6 +242,7 @@ a:hover {
 
 .l-bloc .navbar-toggle .icon-bar {
     color: rgba(0, 0, 0, .6);
+    display: none;
 }
 
 .d-bloc .panel .btn-wire,
@@ -290,6 +279,7 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    width: 90%;
 }
 
 .navbar-brand {
@@ -317,7 +307,7 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    margin-right: 36px;
     float: right;
     z-index: 1;
 }
@@ -335,11 +325,13 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    list-style: none;
 }
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+    display:none;
 }
 
 .navbar-toggle:hover {
@@ -349,6 +341,7 @@ a:hover {
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
+    display: none; 
 }
 
 .nav-invert .navbar .nav {
@@ -400,13 +393,18 @@ a:hover {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
+        display: none;
     }
+
+
 }
 
 .nav > li > .dropdown a {
     background: none!important;
     display: block;
     padding: 14px 15px;
+    text-decoration: none;
+    list-style: none;
 }
 
 nav .caret {
@@ -655,11 +653,13 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    width: 100%;
 }
 
 .hero-bloc-text {
     font-size: 38px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-bloc-text-sub {
@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -705,7 +705,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
 }
 
@@ -775,7 +775,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -809,14 +809,6 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
 }
@@ -841,7 +833,7 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 100%
     }
     .nav-center.navbar .nav {
         max-width: 100%
@@ -908,10 +900,16 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
+    
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
+    }
+    .navbar .navbar-toggle .icon-bar {
+        background-color: rgba(0, 0, 0, .5);
+        width: 26px;
+        display: contents; 
     }
     .navbar.row {
         margin-left: 0;
@@ -930,6 +928,7 @@ h4 {
         text-align: left;
         padding-left: 15px;
         width: 100%;
+        margin-left: 20px;
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
@@ -972,6 +971,7 @@ h4 {
     .nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;
+        display: block;
     }
     .bloc {
         padding-left: 0;
