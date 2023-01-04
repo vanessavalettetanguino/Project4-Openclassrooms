@@ -282,6 +282,8 @@ a:hover {
     margin-bottom: 0;
     z-index: 1;
     width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .navbar-brand {
@@ -651,6 +653,12 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+#bloc-8 a {
+    font-family: "helvetica";
+    font-weight: 600;
+    color: #FFFFFF!important;
+    text-decoration: underline;
 }
 
 .container {
