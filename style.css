@@ -714,9 +714,14 @@ p {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.4em;
 }
+
+.row h2 {
+    margin-left: auto;
+    margin-top: auto;
+} 
 
 h3 {
     font-size: 15px;
@@ -762,7 +767,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(45, 40, 26, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
