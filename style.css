@@ -221,7 +221,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color:  rgba(255, 255, 255, .6);
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -654,6 +654,7 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
+
 #bloc-8 a {
     font-family: "helvetica";
     font-weight: 600;
@@ -718,10 +719,6 @@ h2 {
     line-height: 1.4em;
 }
 
-.row h2 {
-    margin-left: auto;
-    margin-top: auto;
-} 
 
 h3 {
     font-size: 15px;
