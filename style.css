@@ -717,6 +717,9 @@ p {
 h2 {
     font-size: 26px;
     line-height: 1.4em;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -752,6 +755,9 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 .portfolio-row {
